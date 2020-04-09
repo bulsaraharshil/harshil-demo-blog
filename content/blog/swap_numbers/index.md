@@ -4,7 +4,6 @@ date: "2020-04-09T22:40:32.169Z"
 description: I am going to show how to swap 2 numbers without using 3rd variable
 ---
 
-//Code
 #include<stdio.h>
 int main()  
 {  
