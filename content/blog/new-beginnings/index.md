@@ -4,8 +4,9 @@ date: "2020-04-09T22:40:32.169Z"
 description: I am going to show how to swap 2 numbers without using 3rd variable
 ---
 
-#include<stdio.h>  
- int main()  
+//Code
+#include<stdio.h>
+int main()  
 {  
 int a=10, b=20;  
 printf("Before swap a=%d b=%d",a,b);  
