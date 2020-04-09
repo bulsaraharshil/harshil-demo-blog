@@ -5,38 +5,32 @@ description: "I am going to show program of Selection Sort in C "
 ---
 
 #include<stdio.h>
-#include<conio.h>
-void selectionsort(int a[],int n);
-void main()
-{
-int n,i,a[10];
-clrscr();
-printf("enter the no of elements");
-scanf("%d",&n);
-printf("enter the elements");
-for(i=0;i<n;i++)
-scanf("%d",&a[i]);
-selectionsort(a,n);
-for(i=0;i<n;i++)
-printf("%d",a[i]);
-getch();
-}
-void selectionsort(int a[],int n)
-{
-int i,j,index,large;
-for(i=n-1;i>0;i--)
-{
-large=a[0];
-index=0;
-for(j=1;j<=i;j++)
-{
-if (a[j]>large)
-{
-large=a[j];
-index=j;
+int main(){
+
+int i, j, count, temp, number[25];
+
+printf("How many numbers u are going to enter?: ");
+scanf("%d",&count);
+
+printf("Enter %d elements: ", count);
+// Loop to get the elements stored in array
+for(i=0;i<count;i++)
+scanf("%d",&number[i]);
+
+// Logic of selection sort algorithm
+for(i=0;i<count;i++){
+for(j=i+1;j<count;j++){
+if(number[i]>number[j]){
+temp=number[i];
+number[i]=number[j];
+number[j]=temp;
 }
 }
-a[index]=a[i];
-a[i]=large;
 }
+
+printf("Sorted elements: ");
+for(i=0;i<count;i++)
+printf(" %d",number[i]);
+
+return 0;
 }
