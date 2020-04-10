@@ -1,7 +1,7 @@
 ---
 title: Binary Search in C
 date: "2020-04-09T22:12:03.284Z"
-description: "I am going to show program of Binary Search in C "
+description: "I am going to show program of Binary Search "
 ---
 
 // C program to implement recursive Binary Search
@@ -32,7 +32,7 @@ int mid = l + (r - l) / 2;
 
     // We reach here when element is not
     // present in array
-    return -1;
+    return 0;
 
 }
 
