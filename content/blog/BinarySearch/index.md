@@ -47,3 +47,5 @@ int result = binarySearch(arr, 0, n - 1, x);
 result);
 return 0;
 }
+
+THANK YOU!!!!
